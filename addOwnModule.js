@@ -1,6 +1,5 @@
 var http = require('http');
 var dt = require('./myFirstModule'); // "./" modülün node.js dosyası ile aynı klasörde old. anlamına gelir.
-
 http.createServer(function (req, res) {
     res.writeHead(200, {'Content-Type': 'text/html'});
     res.write("The date and time are currently: " + dt.myDateTime());  //we called own module as known as myFirstModule
